@@ -1,0 +1,15 @@
+Practical task:
+Implement a DiscountCalculator class that calculates the final price after applying a discount based on the original price and the customer's membership type.
+The discount varies depending on:
+Non-members: No discount.
+Silver members: 5% discount for purchases over $100.
+Gold members: 10% discount for purchases over $50.
+Platinum members: 20% discount, regardless of the purchase amount
+
+
+BVA
+Non members
+expected 100 sin descuento
+Silver members
+
+EP
