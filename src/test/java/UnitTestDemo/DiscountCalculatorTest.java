@@ -17,28 +17,28 @@ class DiscountCalculatorTest {
     }
 
     @Test()
-    void testCaseTwo() {
+    void testCaseThree() {
         double want = 100.0;
         double got = calculator.calculateFinalPrice(100.0, MembershipLevel.SILVER);
         assertEquals(want, got);
     }
 
     @Test()
-    void testCaseThree() {
+    void testCaseFour() {
         double want = 95.94999999999999;
         double got = calculator.calculateFinalPrice(101.0, MembershipLevel.SILVER);
         assertEquals(want, got);
     }
 
     @Test()
-    void testCaseFour() {
+    void testCaseFive() {
         double want = 50;
         double got = calculator.calculateFinalPrice(50, MembershipLevel.GOLD);
         assertEquals(want, got);
     }
 
     @Test()
-    void testCaseFive() {
+    void testCaseSix() {
         double want = 45.90;
         double got = calculator.calculateFinalPrice(51, MembershipLevel.GOLD);
         assertEquals(want, got);
