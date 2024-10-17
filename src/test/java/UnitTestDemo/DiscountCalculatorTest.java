@@ -43,4 +43,25 @@ class DiscountCalculatorTest {
         double got = calculator.calculateFinalPrice(51, MembershipLevel.GOLD);
         assertEquals(want, got);
     }
+
+    @Test()
+    void testCaseNine(){
+        double want = 80;
+        double got = calculator.calculateFinalPrice(100, MembershipLevel.PLATINUM);
+        assertEquals(want,got);
+    }
+
+    @Test()
+    void testCaseTen(){
+        double want = 160;
+        double got = calculator.calculateFinalPrice(200, MembershipLevel.PLATINUM);
+        assertEquals(want,got);
+    }
+
+    @Test()
+    void testCaseEleven(){
+        double want = 1600;
+        double got = calculator.calculateFinalPrice(2000, MembershipLevel.PLATINUM);
+        assertEquals(want,got);
+    }
 }
